@@ -21,6 +21,12 @@ get_header();
 			while ( have_posts() ) :
 				the_post();
 // à modifier  utiliser la fonction in_category() pour que 'single-nouvelle'
+/*
+				if(in_category('nouvelle')||in_category('evenement')){
+					get_template_part( 'template-parts/content/content', 'single-nouvelle' );
+				}
+
+*/
 // ne s'exécute que pour les articles de catégorie nouvelle ou événement
 					get_template_part( 'template-parts/content/content', 'single-nouvelle' );
 			

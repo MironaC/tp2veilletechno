@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
- Theme Name:   Twenty nineteen Mirona
+ Theme Name:   Twenty nineteen Enfant
  Theme URI:    http://referenced.ca
- Description:  Twenty nineteen Mirona Theme
+ Description:  Twenty nineteen enfant Theme
  Author:       Eddy Martin
  Author URI:   http: //referenced.ca
  Template:     twentynineteen
@@ -10,7 +10,7 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twenty-nineteen-Mirona
+ Text Domain:  twenty-nineteen-enfant
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -781,6 +781,10 @@ body.page .main-navigation {
 
 .entry .entry-content .has-large-font-size {
   font-size: 1em;
+}
+
+a {
+  color: red;
 }
 
 @-webkit-keyframes anim1 {
