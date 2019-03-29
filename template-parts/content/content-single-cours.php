@@ -19,7 +19,7 @@
 	<?php endif; ?>
 
 	<div class="entry-content">
-		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
+		<div class="wp-block-media-text alignwide" style="grid-template-columns:none">
 
 			<div class="wp-block-media-text__content">
 				<?php
@@ -28,8 +28,10 @@
 			</div>
 
 		</div>
-		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
+		<div class="wp-block-media-text alignwide" style="grid-template-columns:none">
 			<h3>Nombre d'heures de cours:</h3>
+			
+			<div>
 			Ce cours dure 
 			<?php
 						if (get_field('duree_du_cours')){
@@ -40,18 +42,20 @@
 
 			?>
 			heures
+
+			</div>
 		</div>
-		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
-			<h3>Nombre d'heures de cours :</h3>
-			Professeurs qui donnent ce cours: 
+		<div class="alignwide" style="grid-template-columns:none">
+			<h3>Professeurs qui donnent ce cours:</h3>
+			<div>
 			<?php
 						if (get_field('prefesseurs')){
 							$duree = get_field('professeurs');
 						}
 
 						the_field('professeurs');
-
 			?>
+			</div>
 		</div>
 		<figure class="wp-block-media-text__media">
 			<h3>Projets réalisés dans le cadre du cours:</h3>
