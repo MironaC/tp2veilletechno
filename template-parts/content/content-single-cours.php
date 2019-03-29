@@ -42,7 +42,7 @@
 			heures
 		</div>
 		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
-			<h3>Nombre d'heures de cours:</h3>
+			<h3>Nombre d'heures de cours :</h3>
 			Professeurs qui donnent ce cours: 
 			<?php
 						if (get_field('prefesseurs')){
