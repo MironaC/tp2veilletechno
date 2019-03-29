@@ -18,12 +18,12 @@ get_header();
 <!--  ////////////////////// La troisième boucle pour les articles de catégorie  événement  -->
 
 <?php
-		$args = array( 'post_type' => 'post',
+	$args = array( 'post_type' => 'post',
 					   'category_name' => 'evenement',
 					   'posts_per_page' => 4
 					);
 
-		$query = new WP_Query ( $args );
+	$query = new WP_Query ( $args );	
 	
 		if ($query->have_posts() ) {
 	?>
@@ -31,6 +31,37 @@ get_header();
 		<?php while ( $query->have_posts()) {
 				$query->the_post();
 				include(locate_template( 'template-parts/content/frontpage-une-image.php' ));
+			}			 
+
+	 wp_reset_postdata();
+	}
+?>
+	</div>	
+</article>	
+<!--  ///////////////////////////////////////////////////////////////////////// -->
+
+	</main><!-- #main -->
+</section><!-- #primary -->
+
+<section id="primary" class="content-area">
+	<main id="main" class="site-main">
+
+<!--  ////////////////////// La troisième boucle pour les articles de catégorie  événement  -->
+
+<?php
+	$args = array( 'post_type' => 'post',
+					   'category_name' => 'nouvelle',
+					   'posts_per_page' => 4
+					);
+
+	$query = new WP_Query ( $args );	
+	
+		if ($query->have_posts() ) {
+	?>
+
+		<?php while ( $query->have_posts()) {
+				$query->the_post();
+				include(locate_template( 'template-parts/content/frontpage-quatre-images.php' ));
 			}			 
 
 	 wp_reset_postdata();
