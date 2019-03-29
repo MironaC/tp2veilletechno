@@ -28,6 +28,31 @@
 			</div>
 
 		</div>
+		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
+			<h3>Nombre d'heures de cours:</h3>
+			Ce cours dure 
+			<?php
+						if (get_field('duree_du_cours')){
+							$duree = get_field('duree_du_cours');
+						}
+
+						the_field('duree_du_cours');
+
+			?>
+			heures
+		</div>
+		<div class="wp-block-media-text alignwide" style="grid-template-columns:30% auto">
+			<h3>Nombre d'heures de cours:</h3>
+			Professeurs qui donnent ce cours: 
+			<?php
+						if (get_field('prefesseurs')){
+							$duree = get_field('professeurs');
+						}
+
+						the_field('professeurs');
+
+			?>
+		</div>
 		<figure class="wp-block-media-text__media">
 			<h3>Projets réalisés dans le cadre du cours:</h3>
 			<?php
