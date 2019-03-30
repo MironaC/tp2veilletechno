@@ -11,7 +11,6 @@
 
 get_header();
 ?>
-//////////////////  froniiiit-page.php /***/////////////
 <section id="primary" class="content-area">
 	<main id="main" class="site-main">
 
@@ -71,8 +70,8 @@ get_header();
 </article>	
 <!--  ///////////////////////////////////////////////////////////////////////// -->
 
-	</main><!-- #main -->
-</section><!-- #primary -->
+	</main>
+</section>
 
 <?php
 get_footer();

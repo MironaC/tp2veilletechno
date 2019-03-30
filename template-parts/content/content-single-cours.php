@@ -60,10 +60,18 @@
 		<figure class="wp-block-media-text__media">
 			<h3>Projets réalisés dans le cadre du cours:</h3>
 			<?php
-						$image = get_field('projet');
+						$image01 = get_field('projet01');
+						$image02 = get_field('projet02');
+						$image03 = get_field('projet03');
 						$size = 'medium'; // (thumbnail, medium, large, full or custom size)
-						if( $image ) {
-							echo wp_get_attachment_image( $image, $size );
+						if( $image01 ) {
+							echo wp_get_attachment_image( $image01, $size );
+						}
+						if( $image02 ) {
+							echo wp_get_attachment_image( $image02, $size );
+						}
+						if( $image03 ) {
+							echo wp_get_attachment_image( $image03, $size );
 						}
 			?>
 			</figure>
